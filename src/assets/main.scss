@@ -1,0 +1,53 @@
+@use "utils/font-loader";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: "montserrat-regular", sans-serif;
+    //background-color: $black;
+    background-color: $white;
+
+    &, a {
+        color: $black;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+h1, h2 {
+    font-family: "poppins-bold", sans-serif;
+}
+h3, h4 {
+    font-family: "poppins-medium", sans-serif;
+}
+
+h1 {
+    font-size: 2.1875em;
+}
+h2 {
+    font-size: 1.875em;
+}
+h3 {
+    font-size: 1.5625em;
+}
+h4 {
+    font-size: 1.25em;
+}
+
+.icon {
+    position: relative;
+
+    &::before {
+        font-family: mdi;
+        position: absolute;
+        display: block;
+
+        font-size: 1em;
+    }
+}
