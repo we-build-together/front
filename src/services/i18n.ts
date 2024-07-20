@@ -15,5 +15,5 @@ export default createI18n({
     messages: getMessages(),
     globalInjection: true,
     legacy: false,
-    fallbackLocale: import.meta.env.VITE_LOCALE_FALLBACK
+    fallbackLocale: import.meta.env.VITE_FALLBACK_LANG
 })

@@ -1,14 +1,1 @@
-{
-    "documents": {
-        "home": "Accueil"
-    },
-    "header": {
-        "nav": {
-            "welcome": "Bienvenue",
-            "about": "À propos",
-            "services": "Nos services",
-            "faq": "FAQ",
-            "contact": "Nous contacter"
-        }
-    }
-}
+{}

@@ -1,0 +1,143 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 3em;
+
+  position: relative;
+  border-bottom: 1px solid #E9E9E9;
+  height: 5em;
+
+  &>a>img {
+    width: 12em;
+  }
+
+  &>nav {
+    &>ul {
+      display: flex;
+      align-items: center;
+      gap: 3em;
+      list-style: none;
+
+      &>li {
+        font-family: "raleway-medium", sans-serif;
+
+        &>a {
+          transition: all .5s ease;
+        }
+        &:hover>a {
+          color: $primary
+        }
+      }
+    }
+  }
+
+  & button.icon.primary::before {
+    @include icon(arrow-top-right);
+  }
+
+  &.responsive {
+    display: none;
+
+    &>a>img {
+      width: 2em;
+    }
+
+    &>button.toggle-navbar {
+      padding: unset;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      color: $gray-1;
+      transform: translateY(-50%);
+
+      border: unset;
+      background-color: transparent;
+
+      &::before {
+        font-size: 2.5em;
+        @include icon("menu");
+      }
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+aside.responsive-navbar {
+  background-color: $white;
+  width: 100%;
+  height: 100vh;
+
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: -50em;
+
+  transition: all .4s ease;
+  z-index: 2;
+
+  &.expended {
+    left: 0;
+  }
+
+  &>button.icon.close {
+    color: $gray-1;
+
+    border: unset;
+    background-color: transparent;
+
+    padding: unset;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+
+    &:hover {
+      color: $primary;
+    }
+    &::before {
+      position: unset;
+      transform: unset;
+      font-size: 2.5em;
+      @include icon("close");
+    }
+  }
+
+  &>nav {
+    position: absolute;
+    top: 4em;
+    left: 5em;
+
+    &>ul {
+      list-style: none;
+
+      &>li {
+        font-size: 2em;
+        margin: 1em 0;
+      }
+    }
+
+    &>.icon.primary {
+      font-size: 1.5em;
+    }
+  }
+}
+
+// responsive header part
+@media screen and (max-width: 849px) {
+  header {
+    &.desktop {
+      display: none;
+    }
+    &.responsive {
+      display: block;
+    }
+  }
+
+  aside.responsive-navbar {
+    display: block;
+  }
+}

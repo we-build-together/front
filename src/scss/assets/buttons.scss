@@ -1,0 +1,43 @@
+button {
+  font-family: "raleway-medium", sans-serif;
+  border-radius: 100px;
+  padding: .7em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all .5s ease;
+  color: white;
+
+  &.icon {
+    padding-right: 3em;
+    &::before {
+      font-size: 1.5em;
+      right: 5px;
+      top: 50%;
+    }
+  }
+
+  &.primary {
+    background-color: $primary-2;
+    border: 1px solid $primary-2;
+  }
+  &.secondary {
+    background-color: transparent;
+    color: $primary-2;
+    border-color: $primary-2;
+  }
+
+  &.primary:disabled, &.secondary:disabled {
+    opacity: 50%;
+  }
+
+  &.primary:not(:disabled):hover,
+  &.secondary:not(:disabled):hover {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+  }
+  &.secondary:not(:disabled):focus,
+  &.primary:not(:disabled):focus {
+    box-shadow: 0 0 0 4px #adbfff;
+  }
+}

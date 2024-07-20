@@ -1,0 +1,60 @@
+@use "font-loader";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: "raleway-regular", sans-serif;
+    background-color: $white;
+
+    &, a {
+        color: $gray-1;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+h1, h2 {
+    font-family: "poppins-bold", sans-serif;
+}
+h3, h4 {
+    font-family: "poppins-medium", sans-serif;
+}
+
+h1 {
+    font-size: 2.1875em;
+}
+h2 {
+    font-size: 1.875em;
+}
+h3 {
+    font-size: 1.5625em;
+}
+h4 {
+    font-size: 1.25em;
+}
+p {
+    color: $gray-1;
+}
+
+.icon {
+    position: relative;
+
+    &::before {
+        font-family: mdi, sans-serif;
+        position: absolute;
+        display: block;
+
+        font-size: 1em;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* import assets */
+@import "assets/buttons";
+@import "assets/inputs";

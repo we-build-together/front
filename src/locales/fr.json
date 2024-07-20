@@ -1,14 +1,56 @@
 {
-    "documents": {
-        "home": "Accueil"
+  "header": {
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact",
+    "buildYourProjectButton": "Parlons de votre projet"
+  },
+  "footer": {
+    "top": {
+      "sendMailLabel": "Nous contacter avec votre e-mail",
+      "changeLangLabel": "Choisir une langue"
     },
-    "header": {
-        "nav": {
-            "welcome": "Bienvenue",
-            "about": "À propos",
-            "services": "Nos services",
-            "faq": "FAQ",
-            "contact": "Nous contacter"
-        }
-    }
+    "allRightReserved": "Tout droit réservés",
+    "followUsOn": "Rejoignez-nous sur"
+  },
+  "heroHeader": {
+    "title": [
+      "Construisons ensemble",
+      "un site web",
+      "qui vous",
+      "ressemble."
+    ],
+    "description": "We build together est une agence web basé à Rennes. Elle offre des prestations de création et maintenance de site web aux particuliers et aux professionnels.",
+    "buttons": ["Nos services", "Parlons de votre projet"],
+    "dialogs": ["Croissance de votre business ?", "Augmentation de votre visibilité en ligne ?"]
+  },
+  "about": {
+    "preTitle": "Ce que nous faisons",
+    "title": "Nous souhaitons vous aider à construire un site qui vous ressemble.",
+    "cards": [
+      {
+        "icon": "code-tags",
+        "title": "Développement web",
+        "description": "Nous réalisons votre site internet ensemble de la conception à la mise en ligne."
+      },
+      {
+        "icon": "layers",
+        "title": "Web design",
+        "description": "Nous concevons pour vous la charte graphique et la maquette web de votre site internet."
+      },
+      {
+        "icon": "chart-timeline-variant-shimmer",
+        "title": "SEO",
+        "description": "Nous vous aidons à améliorer le référencement de votre site internet pour augmenter sa visibilité."
+      }
+    ]
+  },
+  "faq": {
+    "article": {
+      "seeMoreButton": "En savoir plus"
+    },
+    "title": "Vous avez une question ou une demande ?",
+    "subtitle": "Vous ne trouvez pas de réponse à vos questions ? N’hésite pas à nous contacter en remplissant le formulaire avec vos questions !",
+    "buttonContactUS": "Nous contacter"
+  }
 }

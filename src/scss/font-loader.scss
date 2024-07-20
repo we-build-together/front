@@ -1,0 +1,30 @@
+$fonts: (
+    raleway-black,
+    raleway-bold,
+    raleway-extrabold,
+    raleway-light,
+    raleway-medium,
+    raleway-regular,
+    raleway-semibold,
+    raleway-thin,
+    poppins-black,
+    poppins-bold,
+    poppins-extrabold,
+    poppins-light,
+    poppins-medium,
+    poppins-regular,
+    poppins-semibold,
+    poppins-thin
+);
+
+@each $font in $fonts {
+    @font-face {
+        font-family: #{$font};
+        src: url(/fonts/#{$font}.ttf);
+    }
+}
+
+@font-face {
+    font-family: mdi;
+    src: url(/node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf);
+}

@@ -1,0 +1,95 @@
+.hero-header {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+
+  position: relative;
+  height: calc(100vh - 5em);
+
+  &>div.wave-motif {
+    background-image: url(/assets/hero-header-asset-3.svg);
+    background-size: contain;
+
+    width: 100%;
+    height: 50vh;
+
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+  }
+
+  &>div.right {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    font-size: 1.1em;
+
+    &>h1 {
+      &>span {
+        display: block;
+
+        &.underline>span {
+          &:first-of-type {
+            color: $primary;
+            border-bottom: 5px solid $primary;
+          }
+          &:last-of-type {
+            margin-left: .3em;
+          }
+        }
+      }
+    }
+
+    &>p {
+      margin: .5em 0;
+      width: 40%;
+    }
+
+    &>.buttons {
+      display: flex;
+      gap: 2em;
+      margin: 1em 0;
+    }
+  }
+
+  &>div.left {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+
+    &>.asset-background {
+      $size: 35em;
+      background-image: url(/assets/hero-header-asset-1.svg);
+      background-size: cover;
+      background-position: center;
+
+      height: $size;
+      width: $size;
+
+      position: relative;
+
+      &>.dialog {
+        background-color: white;
+        padding: .8em 1em;
+        border-radius: 20px;
+        box-shadow: $shadow-settings-1;
+
+        position: absolute;
+
+        &:nth-of-type(1) {
+          width: fit-content;
+          left: -20%;
+          bottom: 28%;
+        }
+
+        &:nth-of-type(2) {
+          width: 14em;
+          left: -7%;
+          bottom: 10%;
+        }
+      }
+    }
+
+  }
+
+}
