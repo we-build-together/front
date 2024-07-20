@@ -1,4 +1,8 @@
 {
+  "locales": {
+    "fr": "Français",
+    "en": "Anglais"
+  },
   "header": {
     "about": "À propos",
     "services": "Services",

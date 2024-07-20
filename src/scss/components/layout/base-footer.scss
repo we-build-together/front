@@ -1,0 +1,159 @@
+footer {
+  background-color: $gray-1;
+  color: white;
+  padding: 2em 3em;
+
+  &>div.top, &>div.bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &>div.top {
+    &>div:first-of-type {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+
+      position: relative;
+
+      &>label {
+        font-size: .9em;
+      }
+
+      &>input {
+        font-size: .9em;
+        padding: .8em 1em;
+
+        border-radius: 5px;
+        color: $gray-2;
+
+        width: 15em;
+
+        border: 1px solid white;
+        &::placeholder {
+          color: $gray-2;
+        }
+      }
+
+      &>button {
+        background-color: $gray-1;
+        position: absolute;
+        right: 1px;
+
+        border-radius: 0 5px 5px 0;
+        width: 2em;
+        height: 95%;
+
+        padding: unset;
+        border: unset;
+
+        &::before {
+          color: white;
+          transform: unset;
+          position: unset;
+          @include icon("menu-right");
+        }
+      }
+    }
+    &>div:last-of-type {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+
+      &>span {
+        font-size: .9em;
+      }
+
+      &>div.selector {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        border: 1px solid white;
+        padding: .5em 4em .5em 1em;
+        border-radius: 5px;
+
+        position: relative;
+
+        &>span.value {
+          user-select: none;
+        }
+
+        &>span.icon.choose {
+          position: absolute;
+          right: 20px;
+          &::before {
+            font-size: 1.5em;
+            @include icon("menu-down");
+          }
+        }
+
+        &>.dropdown {
+          position: absolute;
+          bottom: 2.5em;
+          left: 0;
+          background-color: $gray-1;
+
+          width: 100%;
+          list-style: none;
+          border: 1px solid white;
+          border-radius: 5px;
+          &>li {
+            padding: .5em;
+            &:not(:last-of-type) {
+              border-bottom: 1px solid white;
+            }
+
+            &.icon.selected {
+              &::before {
+                top: 50%;
+                right: 10px;
+                @include icon("check");
+              }
+            }
+          }
+        }
+      }
+    }
+
+    border-bottom: 1px solid $gray-2;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+  }
+
+  &>div.bottom {
+    &>div {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+
+      &>nav {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+
+        &>a {
+          &>.icon {
+            &::before {
+              font-size: 1.5em;
+              position: unset;
+              transform: unset;
+              color: white;
+            }
+            &.twitter::before {
+              @include icon("twitter");
+            }
+            &.instagram::before {
+              @include icon("instagram");
+            }
+            &.youtube::before {
+              @include icon("youtube");
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
