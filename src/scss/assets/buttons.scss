@@ -5,7 +5,9 @@ button {
   font-size: 1em;
   cursor: pointer;
   transition: all .5s ease;
+
   color: white;
+  border: 1px solid white;
 
   &.icon {
     padding-right: 3em;

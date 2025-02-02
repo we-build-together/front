@@ -11,14 +11,13 @@ section.about {
     }
     &>h2 {
       font-family: "raleway-semibold", sans-serif;
-      width: 15em;
       font-size: 2.5em;
     }
   }
 
   &>section.cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2em;
 
     &>article.card {

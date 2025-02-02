@@ -56,5 +56,10 @@
     "title": "Vous avez une question ou une demande ?",
     "subtitle": "Vous ne trouvez pas de réponse à vos questions ? N’hésite pas à nous contacter en remplissant le formulaire avec vos questions !",
     "buttonContactUS": "Nous contacter"
+  },
+  "services": {
+    "title": "Services",
+    "hostingOption": "Un service d'hebergement de votre site est proposé en option",
+    "see-more": "En savoir plus"
   }
 }

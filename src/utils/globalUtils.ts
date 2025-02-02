@@ -2,7 +2,7 @@
  * @description define webpage title
  * @param {String} title a new web page title
  */
-function setDocumentTitle(title: string) {
+const setDocumentTitle = (title: string): void => {
     document.title = `WeBuildTogether - ${title}`;
 }
 

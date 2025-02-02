@@ -20,7 +20,7 @@ section.faq-section {
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
-        padding-bottom: .5em;
+        //padding-bottom: .5em;
 
         &>.icon {
           &::before {
@@ -39,22 +39,32 @@ section.faq-section {
         }
       }
 
-      &>p {
-        color: $gray-2;
-      }
+      &>div.content {
+        height: 0;
+        transition: all .5s ease;
+        overflow: hidden;
 
-      &>button.icon.see-more {
-        & *, & {color: $primary;}
+        &.active {
+          height: 6em;
+        }
 
-        border: unset;
-        color: $primary;
-        background-color: transparent;
-        display: block;
-        margin-top: .5em;
-        margin-left: auto;
+        &>p {
+          color: $gray-2;
+        }
 
-        &::before {
-          @include icon("arrow-right");
+        &>button.icon.see-more {
+          & *, & {color: $primary;}
+
+          border: unset;
+          color: $primary;
+          background-color: transparent;
+          display: block;
+          margin-top: .5em;
+          margin-left: auto;
+
+          &::before {
+            @include icon("arrow-right");
+          }
         }
       }
     }

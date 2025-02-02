@@ -1,0 +1,52 @@
+[
+  {
+    "fr": {
+      "title": "Site vitrine",
+      "shortDescription": "Un site simple et efficace pour présenter une entreprise, une marque ou un projet.",
+      "lines": [
+        "Design unique et moderne",
+        "Développement sur-mesure",
+        "Responsive (site internet adapté mobile/tablette)",
+        "Optimisation SEO de base"
+      ]
+    }
+  },
+  {
+    "fr": {
+      "title": "Site dynamique",
+      "shortDescription": "Un site avec des fonctionnalités interactives (formulaires, blog, espace client, etc.).",
+      "lines": [
+        "Développement sur-mesure",
+        "Interface administrable si besoin",
+        "Sécurisation et performance optimisées",
+        "Responsive design",
+        "SEO-friendly"
+      ]
+    }
+  },
+  {
+    "fr": {
+      "title": "E-Commerce",
+      "shortDescription": "Un site marchand complet pour vendre en ligne.",
+      "lines": [
+        "Développement sur-mesure",
+        "Système de gestion des produits et des commandes",
+        "Intégration des paiements sécurisés",
+        "Interface simple et intuitive",
+        "Optimisation SEO e-commerce"
+      ]
+    }
+  },
+  {
+    "fr": {
+      "title": "Offre Sur-Mesure",
+      "shortDescription": "Un développement 100% adapté à ton projet spécifique.",
+      "lines": [
+        "Étude des besoins",
+        "Développement unique et personnalisé",
+        "Fonctionnalités spécifiques (API, intégrations, etc.)",
+        "Accompagnement et conseils"
+      ]
+    }
+  }
+]
