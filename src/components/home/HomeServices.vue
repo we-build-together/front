@@ -3,7 +3,11 @@
     <h2>{{ $t('services.title') }}</h2>
 
     <section>
-      <article v-for="service in services" :key="JSON.stringify(service)">
+      <article 
+        v-for="(service, index) in services" 
+        :class="{'active': index === services.length-1}" 
+        :key="JSON.stringify(service)"
+      >
         <h3>{{ service[locale].title }}</h3>
         <p>{{ service[locale].shortDescription }}</p>
 

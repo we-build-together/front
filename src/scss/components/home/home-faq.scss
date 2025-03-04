@@ -97,3 +97,14 @@ section.faq-section {
 
   }
 }
+
+@media screen and (max-width: 1008px) {
+  section.faq-section {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+    section.faq {
+      width: unset;
+    }
+  }
+}

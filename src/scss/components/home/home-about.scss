@@ -75,3 +75,18 @@ section.about {
   }
 
 }
+
+@media screen and (max-width: 1008px) {
+  section.about {
+    flex-wrap: wrap;
+  
+    section.cards {
+      display: flex;
+      flex-direction: column;
+
+      article.card {
+        flex-basis: auto;
+      }
+    }
+  }
+}

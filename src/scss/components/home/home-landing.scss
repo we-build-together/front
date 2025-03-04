@@ -1,14 +1,17 @@
 .hero-header {
   display: flex;
   justify-content: center;
-  gap: 3em;
+
+  gap: 4em;
+  flex-wrap: wrap;
 
   position: relative;
   height: calc(100vh - 5em);
+  margin-top: 5em;
 
   &>div.wave-motif {
     background-image: url(/assets/hero-header-asset-3.svg);
-    background-size: contain;
+    background-size: cover;
 
     width: 100%;
     height: 50vh;
@@ -19,12 +22,16 @@
   }
 
   &>div.right {
-    position: absolute;
-    top: 13%;
-    left: 10%;
-    font-size: 1.1em;
+    font-size: 1em;
+    width: 40%;
+
+    position: relative;
+    z-index: 999;
 
     &>h1 {
+      font-size: 3.5em;
+      width: fit-content;
+
       &>span {
         display: block;
 
@@ -42,10 +49,12 @@
 
     &>p {
       margin: .5em 0;
-      width: 40%;
+      font-size: 1.4em;
+      width: 80%;
     }
 
     &>.buttons {
+      font-size: 1.3em;
       display: flex;
       gap: 2em;
       margin: 1em 0;
@@ -53,12 +62,8 @@
   }
 
   &>div.left {
-    position: absolute;
-    right: 10%;
-    top: 10%;
-
     &>.asset-background {
-      $size: 35em;
+      $size: 45em;
       background-image: url(/assets/hero-header-asset-1.svg);
       background-size: cover;
       background-position: center;
@@ -73,6 +78,8 @@
         padding: .8em 1em;
         border-radius: 20px;
         box-shadow: $shadow-settings-1;
+
+        font-size: 1.1em;
 
         position: absolute;
 
@@ -92,4 +99,58 @@
 
   }
 
+}
+
+@media screen and (max-width: 1719px) {
+  .hero-header {
+    height: calc(100vh - 15em);
+  }
+  div.right {
+    h1 {
+      font-size: 2.5em !important;
+    }
+    p {
+      font-size: 1.2em !important;
+    }
+    button {
+      font-size: .8em !important;
+    }
+  }
+  .asset-background {
+    $size: 35em;
+    height: $size !important;
+    width: $size !important;
+  }
+}
+
+@media screen and (max-width: 1164px) {
+  .hero-header {
+    height: auto !important;
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+  div.wave-motif {
+    bottom: -37% !important;
+  }
+  .asset-background {
+    $size: 29em;
+    height: $size !important;
+    width: $size !important;
+
+    &>.dialog {
+      font-size: .9em !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1008px) {
+  .hero-header {
+    &>.right {
+      width: unset !important;
+      margin: 0 5em;
+    }
+    &>.left {
+      display: none !important;
+    }
+  }
 }
